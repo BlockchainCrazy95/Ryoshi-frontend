@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="47.9" height="63.403" viewBox="0 0 47.9 63.403">
+  <g id="success-flag" transform="translate(-923.1 -2916.597)">
+    <g id="Ellipse_1789" data-name="Ellipse 1789" transform="translate(949 2958)" fill="#1a1a1a" stroke="#f2ca66" stroke-width="6">
+      <circle cx="11" cy="11" r="11" stroke="none"/>
+      <circle cx="11" cy="11" r="8" fill="none"/>
+    </g>
+    <g id="flag" transform="matrix(0.259, -0.966, 0.966, 0.259, -3225.38, 2922.322)">
+      <path id="Path_803" data-name="Path 803" d="M4626.677,4024.825l-18.777,34.387" transform="translate(-3569 -5.794)" fill="none" stroke="#c3c1c1" stroke-linecap="round" stroke-width="3"/>
+      <path id="Path_802" data-name="Path 802" d="M12.7,0A22.88,22.88,0,0,1,21.74,5.4c3.87,3.944,2.045,6.794,6.444,10.379a28.95,28.95,0,0,0,10.064,4.972,24.385,24.385,0,0,0-7.463,5.768A27.786,27.786,0,0,0,26.4,35.3,32.989,32.989,0,0,1,15.972,30.49c-4.488-3.363-2.571-5.923-6.564-9.74A27.333,27.333,0,0,0,0,15.222,47.2,47.2,0,0,0,7.952,8.09,30.838,30.838,0,0,0,12.7,0Z" transform="translate(1044.364 4022.921) rotate(-11)" fill="#108f63"/>
+      <path id="Icon_feather-check" data-name="Icon feather-check" d="M8.889,0,2.778,6.111,0,3.333" transform="translate(1064.925 4032.472) rotate(30)" fill="none" stroke="#fff" stroke-linecap="round" stroke-linejoin="round" stroke-width="3"/>
+    </g>
+  </g>
+</svg>
