@@ -6,9 +6,10 @@ export type ConfigMenuItemsType = MenuItemsType & { hideSubNav?: boolean }
 const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   {
     label: t('Learn'),
-    icon: 'Swap',
+    icon: 'Resources',
     href: '/learn',
-    showItemsOnMobile: false,
+    showOnMobile: true,
+    showItemsOnMobile: true,
     items: [
       {
         label: t('Why Ryoshi'),
@@ -49,32 +50,41 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
     label: t('Swap'),
     icon: 'Swap',
     href: '/swap',
+    showOnMobile: true,
     showItemsOnMobile: false,
     items: [],
   },
   {
     label: t('Farm'),
     href: '/farms',
-    icon: 'Earn',
+    icon: 'Farm',
     items: [],
+    showOnMobile: true,
+    showItemsOnMobile: false,
   },
   {
     label: t('NFT'),
     href: '/nft',
-    icon: 'NFT',
+    icon: 'NftFilled',
     items: [],
+    showOnMobile: true,
+    showItemsOnMobile: false,
   },
   {
     label: t('Play Game'),
     href: '/nft',
-    icon: 'NFT',
+    icon: 'TeamBattle',
     items: [],
+    showOnMobile: true,
+    showItemsOnMobile: false,
   },
   {
     label: t('Community'),
     href: '/nft',
-    icon: 'NFT',
+    icon: 'Community',
     items: [],
+    showOnMobile: true,
+    showItemsOnMobile: false,
   }
   // {
   //   label: t('NFT'),

@@ -11,18 +11,20 @@ const GridPanel = styled(Flex)`
     ${({theme}) => theme.mediaQueries.md} {
         grid-template-columns: 24% 24% 24% 24%;
     }
+    ${({theme}) => theme.mediaQueries.lg} {
+        grid-template-columns: 19% 19% 19% 19% 19%;
+    }
 `
 
 const PartnerPanel = styled(Flex)`
     border-radius: 22px;
     border: 1px solid #f2ca66;
     justify-content: center;
-    display: inline-block;
     margin: 25px 20px 0px 20px;
     text-align: center;
     min-height: 95px;
     padding: 32px 0px;
-    
+    display: inline-block;
 
     ${({ theme }) => theme.mediaQueries.sm} {
         

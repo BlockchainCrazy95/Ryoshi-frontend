@@ -30,6 +30,14 @@ const infoButtons = [
     fileUrl: 'probit',
     altText: 'Probit',
     toUrl: '/'
+  },{
+    fileUrl: 'uniswap',
+    altText: 'Uniswap',
+    toUrl: '/'
+  },{
+    fileUrl: 'meta',
+    altText: 'Meta',
+    toUrl: '/'
   }
 ];
 

@@ -36,28 +36,28 @@ const ReasonInfo = () => {
                     </InfoPanel>
                     <Flex flex="1" flexDirection="column">
                         <InfoPanel flex="1" flexDirection="row" p="20px" m={["0px 0px 30px 0px",null, null, "0px 0px 30px 20px"]} alignItems="center">
-                            <Flex flex="1">
+                            {/* <Flex flex="1">
                                 <img src="/images/home/why/low-transaction-fees-vectro.svg" alt="Low TransactionFee"/>
-                            </Flex>
-                            <Flex flex="2" style={{paddingLeft: 25}} flexDirection="column">
+                            </Flex> */}
+                            <Flex flex="21" style={{paddingLeft: 25}} flexDirection="column">
                                 <div className='infoSubTitle'>Low Transaction Fees</div>
                                 <div className='infoText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                             </Flex>
                         </InfoPanel>
                         <InfoPanel flex="1" flexDirection="row" p="20px" m={["0px 0px 30px 0px",null,null, "0px 0px 30px 20px"]} alignItems="center">
-                            <Flex flex="1">
+                            {/* <Flex flex="1">
                                 <img src="/images/home/why/nft-vector.svg" alt="Nft & Art"/>
-                            </Flex>
-                            <Flex flex="2" style={{paddingLeft: 25}} flexDirection="column">
+                            </Flex> */}
+                            <Flex flex="1" style={{paddingLeft: 25}} flexDirection="column">
                                 <div className='infoSubTitle'>NFT’s & Art</div>
                                 <div className='infoText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                             </Flex>
                         </InfoPanel>
                         <InfoPanel flex="1" flexDirection="row" p="20px" m={["0px 0px 30px 0px",null,null, "0px 0px 30px 20px"]} alignItems="center">
-                            <Flex flex="1">
+                            {/* <Flex flex="1">
                                 <img src="/images/home/why/safu-vector.svg" alt="SAFU"/>
-                            </Flex>
-                            <Flex flex="2" style={{paddingLeft: 25}} flexDirection="column">
+                            </Flex> */}
+                            <Flex flex="1" style={{paddingLeft: 25}} flexDirection="column">
                                 <div className='infoSubTitle'>SAFU</div>
                                 <div className='infoText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
                             </Flex>

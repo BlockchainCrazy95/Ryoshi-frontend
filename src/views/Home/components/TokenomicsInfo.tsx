@@ -21,7 +21,7 @@ const GridPanel = styled(Flex)`
     }
 
     ${({ theme }) => theme.mediaQueries.lg} {
-        grid-template-columns: 33% 33% 33%;
+        
     }
 `;
 
@@ -32,23 +32,28 @@ const GridItem = styled(Flex)`
 
 const TokenomicsInfo = () => {
     return (
-        <Flex flexDirection={["column",null,null, "row"]}>
-            <Flex flex="1" flexDirection="column" style={{paddingRight: 25}}>
-                <span className='infoTitle'>Tokenomics & Token Distribution</span>
-                {aboutContents.map((about) => {
-                    return (
-                        <div key={about.subTitle}>
-                            <span className='infoSubTitle'>{about.subTitle}</span>
-                            <div className='infoText'>
-                                {about.contents.map((content => {
-                                    return (
-                                        <p style={{marginBottom:0}}>{content}</p>
-                                    )
-                                }))}
+        <Flex flexDirection={["column",null,null, "column"]}>
+            <Flex flexDirection={["column", null, null, "row"]} style={{paddingRight: 25}}>
+                <Flex flexDirection="column" flex="1">
+                    <span className='infoTitle'>Tokenomics & Token Distribution</span>
+                    {aboutContents.map((about) => {
+                        return (
+                            <div key={about.subTitle}>
+                                <span className='infoSubTitle'>{about.subTitle}</span>
+                                <div className='infoText'>
+                                    {about.contents.map((content => {
+                                        return (
+                                            <p style={{marginBottom:0}}>{content}</p>
+                                        )
+                                    }))}
+                                </div>
                             </div>
-                        </div>
-                    )
-                })}
+                        )
+                    })}
+                </Flex>
+                <Flex flex="1"> </Flex>
+            </Flex>
+            <Flex flexDirection={["column", null, null, "row"]}>
                 <GridPanel flexDirection="row">
                     <GridItem flex="1" flexDirection="column">
                         <span className='tokenInfoTitle'>Token Name</span>
@@ -59,12 +64,26 @@ const TokenomicsInfo = () => {
                         <span className='tokenInfoText'>- $RYOSHI</span>
                     </GridItem>
                     <GridItem flex="1" flexDirection="column">
+                        <span className='tokenInfoTitle'>Tokens Burnt</span>
+                        <span className='tokenInfoText'>- 50% Burnt</span>
+                    </GridItem>
+                    <GridItem flex="1" flexDirection="column">
+                        <span className='tokenInfoTitle'>Tokenomics</span>
+                        <span className='tokenInfoText'>- 2% Burn Each Transfer / Buy / Sell</span>
+                    </GridItem>
+                    <GridItem flex="1" flexDirection="column">
                         <span className='tokenInfoTitle'>Total Supply</span>
                         <span className='tokenInfoText'>- 1,000,000,000,000,000</span>
                     </GridItem>
+                </GridPanel>
+                <GridPanel flexDirection="row" pl={["0px", null,null, "80px"]}>
                     <GridItem flex="1" flexDirection="column">
-                        <span className='tokenInfoTitle'>Total Liquidity</span>
-                        <span className='tokenInfoText'>- 42% Token Added to the PancakeSwap & Locked Forever</span>
+                        <span className='tokenInfoTitle'>Token Name</span>
+                        <span className='tokenInfoText'>- Ryoshi Token</span>
+                    </GridItem>
+                    <GridItem flex="1" flexDirection="column">
+                        <span className='tokenInfoTitle'>Token Symbol</span>
+                        <span className='tokenInfoText'>- $RYOSHI</span>
                     </GridItem>
                     <GridItem flex="1" flexDirection="column">
                         <span className='tokenInfoTitle'>Tokens Burnt</span>
@@ -74,14 +93,11 @@ const TokenomicsInfo = () => {
                         <span className='tokenInfoTitle'>Tokenomics</span>
                         <span className='tokenInfoText'>- 2% Burn Each Transfer / Buy / Sell</span>
                     </GridItem>
+                    <GridItem flex="1" flexDirection="column">
+                        <span className='tokenInfoTitle'>Total Supply</span>
+                        <span className='tokenInfoText'>- 1,000,000,000,000,000</span>
+                    </GridItem>
                 </GridPanel>
-            </Flex>
-            <Flex flex="1" flexDirection="row" alignItems="center"
-                width={["80%",null, null, "100%"]}
-                ml={["10%", null, null, "0"]}
-                mt={["35px", null, null, "0"]}
-            >
-                <img src="/images/home/section-tokenomics.png" alt="Tokenomics" />
             </Flex>
         </Flex>
     )

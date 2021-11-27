@@ -6,20 +6,28 @@ const ExtraInfo = () => {
         <Flex flex="1" flexDirection={["column","column","row"]}>
             <div style={{paddingRight: 10, marginBottom: 20}}>
                 <Flex flexDirection="row">
-                    <span className="infoTitle">30,422</span>
+                    <span className="infoTitle">46,422</span>
                     <div className="infoStatus"><div className="arrow-up">&nbsp;&nbsp;&nbsp;&nbsp;</div>10.53%</div>
                 </Flex>
-                <div className="infoSubTitle">HODLers</div>
-                <div className="infoText">A rapidly growing community with a common mission of going to the Moon</div>
+                <div className="infoSubTitle">BSC Holders</div>
+                {/* <div className="infoText">A rapidly growing community with a common mission of going to the Moon</div> */}
             </div>
-            <div>
+            <div style={{paddingRight: 10, marginBottom: 20, marginLeft: 20}}>
+                <Flex flexDirection="row">
+                    <span className="infoTitle">25,127</span>
+                    <div className="infoStatus"><div className="arrow-up">&nbsp;&nbsp;&nbsp;&nbsp;</div>10.53%</div>
+                </Flex>
+                <div className="infoSubTitle">ETH Holders</div>
+                {/* <div className="infoText">A rapidly growing community with a common mission of going to the Moon</div> */}
+            </div>
+            {/* <div>
                 <Flex flexDirection="row">
                     <span className="infoTitle">58.89%</span>
                     <span className="infoStatusIcon"><img src="/images/home/fire_1f525.png" alt="fire" style={{height:"26px"}}/></span>
                 </Flex>
                 <div className="infoSubTitle">Total Burn</div>
                 <div className="infoText">Hall of the supply is burnt at launch, and 2% is burnt in each transaction</div>
-            </div>
+            </div> */}
         </Flex>
     )
 }

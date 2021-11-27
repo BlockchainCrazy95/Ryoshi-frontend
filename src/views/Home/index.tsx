@@ -6,6 +6,8 @@ import useTheme from 'hooks/useTheme'
 import Container from 'components/Layout/Container'
 import { PageMeta } from 'components/Layout/Page'
 import { Flex } from '@pancakeswap/uikit'
+import useGetWalletIfoData from 'views/Ifos/hooks/v2/useGetWalletIfoData'
+import { ifosConfig } from 'config/constants'
 import Hero from './components/Hero'
 import TokenInfo from './components/TokenInfo'
 import ExtraInfo from './components/ExtraInfo'
@@ -26,6 +28,7 @@ import HowToInfo from './components/HowToInfo'
 import CommunityInfo from './components/CommunityInfo/CommunityInfo'
 import ReasonInfo from './components/ReasonInfo'
 import DiscoverSection from './components/DiscoverSection'
+import Moonmap from './components/Moonmap'
 
 const StyledHeroSection = styled(PageSection)`
   padding-top: 16px;
@@ -69,6 +72,9 @@ const Home: React.FC = () => {
   const { account } = useWeb3React()
 
   const HomeSectionContainerStyles = { margin: '0', width: '100%', maxWidth: '968px' }
+
+  const activeIfo = ifosConfig.find((ifo) => ifo.isActive)
+  const walletIfoData = useGetWalletIfoData(activeIfo);
 
   return (
     <>
@@ -132,13 +138,22 @@ const Home: React.FC = () => {
       >
         <TokenomicsInfo />
       </PageSection>
+      <PageSection
+        innerProps={{ style: { margin: '0', width: '100%' } }}
+        background="#1c1c1c"
+        index={2}
+        hasCurvedDivider={false}
+        style={{ padding: 0 }}
+      >
+        <Moonmap ifo={activeIfo} walletIfoData={walletIfoData} />
+      </PageSection>
       <CircleEffectPanel/>
       <PageSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background="#1c1c1c"
         index={2}
         hasCurvedDivider={false}
-        style={{ padding: 0, backgroundImage: "url('./images/home/bg-nft.png')", backgroundSize: 'cover', height: 860 }}
+        style={{ padding: 0, backgroundImage: "url('./images/home/bg-nft.png')", backgroundSize: 'cover', height: 1240 }}
       >
         <DiscoverSection />
       </PageSection>

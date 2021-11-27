@@ -29,7 +29,21 @@ const FooterLogoPanel = styled.div`
   ${({theme}) => theme.mediaQueries.md} {
     transform: translate(0px, -235px);
   }
+  ${({theme}) => theme.mediaQueries.xxl} {
+    transform: translate(0px, -190px);
+  }
   
+`
+const TopBar = styled.div`
+  position: fixed;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  line-height: 42px;
+  background-color: ${({theme}) => theme.colors.backgroundAlt};
+  color: ${({theme}) => theme.colors.textSubtle}
 `
 
 const Menu = (props) => {
@@ -75,6 +89,7 @@ const Menu = (props) => {
   }
 
   return (
+    <>
     <UikitMenu
       userMenu={<UserMenu />}
       globalMenu={<ExternalLinkSettings />}
@@ -101,6 +116,7 @@ const Menu = (props) => {
       footerContent={footerContent()}
       {...props}
     />
+    </>
   )
 }
 
