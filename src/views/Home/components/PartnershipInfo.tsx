@@ -6,13 +6,7 @@ const GridPanel = styled(Flex)`
     display: grid;
     grid-template-columns: 48% 48%;
     ${({theme}) => theme.mediaQueries.sm} {
-        grid-template-columns: 33% 33% 33%;
-    }
-    ${({theme}) => theme.mediaQueries.md} {
         grid-template-columns: 24% 24% 24% 24%;
-    }
-    ${({theme}) => theme.mediaQueries.lg} {
-        grid-template-columns: 19% 19% 19% 19% 19%;
     }
 `
 
@@ -39,31 +33,35 @@ const partnerships = [
     {
         altText: "Tech Times",
         fileUrl: 'tech-times',
+        link: "https://www.techtimes.com/articles/267822/20211110/ryoshi-token-the-revolutionary-meme-token-that-has-it-all.htm",
         styles: {
             width: "40%"
         }
-        
-    },{
+    }, /* {
         altText: "Yahoo News",
         fileUrl: 'yahoo-news',
         styles:{
             width: "60%"
         }
-    },{
+    }, */
+    {
         altText: "Tech Bullion",
         fileUrl: 'tech-bullion',
+        link: "https://techbullion.com/ryoshi-token-the-revolutionary-meme-token-that-has-it-all/",
         styles: {
             width: "80%"
         }
     },{
         altText: "Yahoo Finance",
         fileUrl: 'yahoo-finance',
+        link: "https://finance.yahoo.com/news/ryoshi-revolutionary-community-driven-entertainment-074000885.html?.tsrc=fin-srch",
         styles: {
             width: "60%"
         }
     },{
         altText: "Market Watch",
         fileUrl: 'market-watch',
+        link: "https://www.marketwatch.com/press-release/ryoshi-a-revolutionary-community-driven-entertainment-token-2021-11-11?tesla=y",
         styles: {
             width: "90%",
             paddingTop: "3%"
@@ -79,7 +77,9 @@ const PartnershipInfo = () => {
                 {partnerships.map((partnership) => {
                     return (
                         <PartnerPanel key={partnership.altText}>
-                            <img style={partnership.styles} src={`/images/home/partnership/${partnership.fileUrl}.svg`} alt={partnership.altText} />
+                            <a href={partnership.link} target="_blank" rel="noreferrer">
+                                <img style={partnership.styles} src={`/images/home/partnership/${partnership.fileUrl}.svg`} alt={partnership.altText} />
+                            </a>
                         </PartnerPanel>
                     )
                 })}

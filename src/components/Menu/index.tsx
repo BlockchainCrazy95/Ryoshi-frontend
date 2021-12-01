@@ -73,7 +73,7 @@ const Menu = (props) => {
         <div style={{textAlign:"center",fontSize:"21px",lineHeight:"35px",marginTop: 30, marginBottom: 25}}>Buy $RYOSHI</div>
         <div style={{textAlign:"center", marginBottom: 80}}>
           <a style={{marginRight: 15, ...styles.btn}} href="/">RyoshiSwap</a>
-          <a style={{marginLeft: 15, ...styles.btn}} href="/">PancakeSwap</a>
+          <a style={{marginLeft: 15, ...styles.btn}} href="https://pancakeswap.finance/swap#/swap?inputCurrency=0x0e5f989ce525acc4ee45506af91964f7f4c9f2e9">PancakeSwap</a>
         </div>
       </Flex>
     )

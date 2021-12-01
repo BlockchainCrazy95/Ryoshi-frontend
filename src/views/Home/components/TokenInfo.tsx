@@ -35,8 +35,8 @@ const infoButtons = [
     altText: 'Uniswap',
     toUrl: '/'
   },{
-    fileUrl: 'meta',
-    altText: 'Meta',
+    fileUrl: 'shibaswap',
+    altText: 'Shibaswap',
     toUrl: '/'
   }
 ];
@@ -55,7 +55,7 @@ const TokenInfo = () => {
         <Flex style={{ marginTop: 20 }}>
           {infoButtons.map((info) => {
             return (
-              <a key={info.fileUrl} href={info.toUrl} target="_blank" rel="noreferrer">
+              <a key={info.fileUrl} href={info.toUrl} target="_blank" rel="noreferrer" style={{width: 50, height: 50}}>
                 <img className='tokenInfoImg' src={`/images/tokenInfo/${info.fileUrl}.png`} alt={info.altText} />
               </a>
             )

@@ -7,29 +7,29 @@ const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   {
     label: t('Learn'),
     icon: 'Resources',
-    href: '/learn',
+    href: '/',
     showOnMobile: true,
     showItemsOnMobile: true,
     items: [
       {
         label: t('Why Ryoshi'),
-        href: '/why',
+        href: '#reason-info'
       },
       {
         label: t('About'),
-        href: '/about',
+        href: '#about-info'
       },
       {
         label: t('Tokenomics'),
-        href: '/tokenomics',
+        href: '#tokenomics-info'
       },
       {
         label: t('Moonmap'),
-        href: '/moonmap',
+        href: '#moonmap-info'
       },
       {
         label: t('Gallery'),
-        href: '/gallery',
+        href: '#gallery-info'
       },
       {
         type: DropdownMenuItemType.DIVIDER

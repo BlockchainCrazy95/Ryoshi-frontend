@@ -113,6 +113,12 @@ const GlobalStyle = createGlobalStyle`
     margin-bottom: 30px;
   }
 
+  .reasonInfoText {
+    font-size: 12px;
+    line-height: 16px;
+    color: #bebebe;
+  }
+
   .aboutInfoPanel {
     margin-top: 10px;
   }

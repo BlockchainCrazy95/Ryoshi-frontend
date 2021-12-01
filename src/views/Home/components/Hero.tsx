@@ -76,7 +76,7 @@ const StarsWrapper = styled.div`
 `
 
 const imagePath = '/images/home/'
-const imageSrc = 'section-first-image'
+const imageSrc = 'homepage-hero'
 
 const starsImage: CompositeImageProps = {
   path: '/images/home/',

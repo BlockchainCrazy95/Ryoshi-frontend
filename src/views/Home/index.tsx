@@ -64,8 +64,25 @@ const CircleEffectPanel = styled.div`
   ${({theme}) => theme.mediaQueries.sm} {
     height: 160px;
   }
-  
-`
+`;
+const StyledDiscoverSection = styled(PageSection)`
+  padding: 0px;
+  background-image: url('./images/home/bg-nft.png');
+  background-size: cover;
+  height: 580px;
+  ${({theme}) => theme.mediaQueries.sm} {
+    height: 860px;
+  }
+  ${({theme}) => theme.mediaQueries.md} {
+    height: 860px;
+  }
+  ${({theme}) => theme.mediaQueries.xl} {
+    height: 1080px;
+  }
+  ${({theme}) => theme.mediaQueries.xxl} {
+    height: 1240px;
+  }
+`;
 
 const Home: React.FC = () => {
   const { theme } = useTheme()
@@ -117,6 +134,7 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
         style={{ padding: 0 }}
+        id="about-info"
       >
         <AboutInfo />
       </PageSection>
@@ -126,6 +144,7 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
         style={{ padding: 0 }}
+        id="reason-info"
       >
         <ReasonInfo />
       </PageSection>
@@ -135,6 +154,7 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
         style={{ padding: 0 }}
+        id="tokenomics-info"
       >
         <TokenomicsInfo />
       </PageSection>
@@ -144,25 +164,26 @@ const Home: React.FC = () => {
         index={2}
         hasCurvedDivider={false}
         style={{ padding: 0 }}
+        id="moonmap-info"
       >
         <Moonmap ifo={activeIfo} walletIfoData={walletIfoData} />
       </PageSection>
       <CircleEffectPanel/>
-      <PageSection
+      <StyledDiscoverSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background="#1c1c1c"
         index={2}
         hasCurvedDivider={false}
-        style={{ padding: 0, backgroundImage: "url('./images/home/bg-nft.png')", backgroundSize: 'cover', height: 1240 }}
       >
         <DiscoverSection />
-      </PageSection>
+      </StyledDiscoverSection>
       <PageSection
         innerProps={{ style: { margin: '0', width: '100%' } }}
         background="#1c1c1c"
         index={2}
         hasCurvedDivider={false}
         style={{ padding: 0 }}
+        id="gallery-info"
       >
         <ArtGallerySection />
       </PageSection>
