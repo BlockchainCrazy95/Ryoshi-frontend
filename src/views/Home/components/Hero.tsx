@@ -119,7 +119,7 @@ const Hero = () => {
               <Button variant="primary">{t('Buy on RyoshiSwap')}</Button>
             </Link>
             <Link href="/swap">
-              <Button variant="secondary">{t('Explore $RYOSHI')}</Button>
+              <Button variant="secondary">{t('Bridge')}</Button>
             </Link>
           </Flex>
         </Flex>

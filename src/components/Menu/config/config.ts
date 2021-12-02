@@ -5,46 +5,12 @@ export type ConfigMenuItemsType = MenuItemsType & { hideSubNav?: boolean }
 
 const config: (t: ContextApi['t']) => ConfigMenuItemsType[] = (t) => [
   {
-    label: t('Learn'),
+    label: t('GoldPaper'),
     icon: 'Resources',
-    href: '/',
+    href: '/goldpaper',
     showOnMobile: true,
     showItemsOnMobile: true,
-    items: [
-      {
-        label: t('Why Ryoshi'),
-        href: '#reason-info'
-      },
-      {
-        label: t('About'),
-        href: '#about-info'
-      },
-      {
-        label: t('Tokenomics'),
-        href: '#tokenomics-info'
-      },
-      {
-        label: t('Moonmap'),
-        href: '#moonmap-info'
-      },
-      {
-        label: t('Gallery'),
-        href: '#gallery-info'
-      },
-      {
-        type: DropdownMenuItemType.DIVIDER
-      },
-      {
-        label: t('Audit'),
-        href: '/audit',
-        type: DropdownMenuItemType.EXTERNAL_LINK
-      },
-      {
-        label: t('GoldPaper'),
-        href: '/goldpaper',
-        type: DropdownMenuItemType.EXTERNAL_LINK
-      },
-    ],
+    items: []
   },
   {
     label: t('Swap'),

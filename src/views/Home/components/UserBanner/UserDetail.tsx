@@ -76,7 +76,7 @@ const UserDetail = () => {
           {isLoading || !account ? (
             <Skeleton width={160} height={16} my="4px" />
           ) : (
-            <Text fontSize="16px"> {t('Connected with %address%', { address: truncatedAddress })}</Text>
+            <Text fontSize="16px" color="black"> {t('Connected with %address%', { address: truncatedAddress })}</Text>
           )}
         </Flex>
       </Desktop>

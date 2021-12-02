@@ -21,6 +21,7 @@ const AppHeaderContainer = styled(Flex)`
   padding: 24px;
   width: 100%;
   border-bottom: 1px solid ${({ theme }) => theme.colors.cardBorder};
+  background-color: ${({theme}) => theme.colors.primary};
 `
 
 const AppHeader: React.FC<Props> = ({ title, subtitle, helper, backTo, noConfig = false }) => {
@@ -35,12 +36,12 @@ const AppHeader: React.FC<Props> = ({ title, subtitle, helper, backTo, noConfig 
           </IconButton>
         )}
         <Flex flexDirection="column">
-          <Heading as="h2" mb="8px">
+          <Heading as="h2" mb="8px" color="black">
             {title}
           </Heading>
           <Flex alignItems="center">
             {helper && <QuestionHelper text={helper} mr="4px" placement="top-start" />}
-            <Text color="textSubtle" fontSize="14px">
+            <Text color="buttonTextColor" fontSize="14px">
               {subtitle}
             </Text>
           </Flex>

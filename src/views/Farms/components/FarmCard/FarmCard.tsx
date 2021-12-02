@@ -28,11 +28,12 @@ const FarmCardInnerContainer = styled(Flex)`
   flex-direction: column;
   justify-content: space-around;
   padding: 24px;
+  background-color: ${({theme}) => theme.colors.primary};
 `
 
 const ExpandingWrapper = styled.div`
   padding: 24px;
-  border-top: 2px solid ${({ theme }) => theme.colors.cardBorder};
+  border-top: 2px solid ${({ theme }) => theme.colors.primaryDark};
   overflow: hidden;
 `
 
@@ -77,8 +78,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
         />
         {!removed && (
           <Flex justifyContent="space-between" alignItems="center">
-            <Text>{t('APR')}:</Text>
-            <Text bold style={{ display: 'flex', alignItems: 'center' }}>
+            <Text color="buttonTextColor">{t('APR')}:</Text>
+            <Text color="buttonTextColor" bold style={{ display: 'flex', alignItems: 'center' }}>
               {farm.apr ? (
                 <ApyButton
                   variant="text-and-button"
@@ -98,8 +99,8 @@ const FarmCard: React.FC<FarmCardProps> = ({ farm, displayApr, removed, cakePric
           </Flex>
         )}
         <Flex justifyContent="space-between">
-          <Text>{t('Earn')}:</Text>
-          <Text bold>{earnLabel}</Text>
+          <Text color="buttonTextColor">{t('Earn')}:</Text>
+          <Text color="buttonTextColor" bold>{earnLabel}</Text>
         </Flex>
         <CardActionsContainer
           farm={farm}

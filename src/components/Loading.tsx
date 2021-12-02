@@ -5,6 +5,7 @@ const Loading = styled.div`
   border-radius: 50%;
   border-top: 8px solid #ddd;
   border-bottom: 8px solid #ddd;
+  background-color: ${({theme}) => theme.colors.backgroundAlt}
   width: 20px;
   height: 20px;
   -webkit-animation: spin 2s linear infinite;

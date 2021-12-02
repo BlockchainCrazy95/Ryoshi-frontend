@@ -29,13 +29,13 @@ const responsive = {
   };
 
 const images = [
-    {url: "images/home/art-gallery/image1.png"},
-    {url: "images/home/art-gallery/image2.png"},
-    {url: "images/home/art-gallery/image3.png"},
-    {url: "images/home/art-gallery/image4.png"},
-    {url: "images/home/art-gallery/image5.png"},
-    {url: "images/home/art-gallery/image6.png"},
-    {url: "images/home/art-gallery/image7.png"}
+    {url: "images/home/art-gallery/image1.jpg"},
+    {url: "images/home/art-gallery/image2.jpg"},
+    {url: "images/home/art-gallery/image3.jpg"},
+    {url: "images/home/art-gallery/image4.jpg"},
+    {url: "images/home/art-gallery/image5.jpg"},
+    {url: "images/home/art-gallery/image6.jpg"},
+    {url: "images/home/art-gallery/image7.jpg"}
 ];
 /*
     width: 14px;

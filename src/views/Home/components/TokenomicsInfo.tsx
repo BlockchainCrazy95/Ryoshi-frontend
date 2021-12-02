@@ -35,7 +35,7 @@ const TokenomicsInfo = () => {
         <Flex flexDirection={["column",null,null, "column"]}>
             <Flex flexDirection={["column", null, null, "row"]} style={{paddingRight: 25}}>
                 <Flex flexDirection="column" flex="1">
-                    <span className='infoTitle'>Tokenomics & Token Distribution</span>
+                    <span className='infoTitle'>Tokenomics</span>
                     {aboutContents.map((about) => {
                         return (
                             <div key={about.subTitle}>

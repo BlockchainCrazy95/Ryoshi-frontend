@@ -11,7 +11,7 @@ const StyledCard = styled(Box)`
   border-radius: ${({ theme }) => `0 0 ${theme.radii.card} ${theme.radii.card}`};
   background: ${({ theme }) =>
     theme.isDark
-      ? 'linear-gradient(360deg, #31b2d2 0%, #31b2d2 100%)'
+      ? '#f2ca66'
       : 'linear-gradient(180deg, #31b2d2 0%,  #31b2d2 42.04%, rgba(206, 236, 243, 0.9) 100%)'};
 `
 

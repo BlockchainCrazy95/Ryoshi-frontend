@@ -29,6 +29,10 @@ import { RowProps } from './components/FarmTable/Row'
 import ToggleView from './components/ToggleView/ToggleView'
 import { DesktopColumnSchema } from './components/types'
 
+const FarmContainer = styled.div`
+  background-color: ${({theme}) => theme.colors.backgroundAlt}
+`
+
 const ControlContainer = styled.div`
   display: flex;
   width: 100%;
@@ -368,13 +372,13 @@ const Farms: React.FC = () => {
   }
 
   return (
-    <>
+    <FarmContainer>
       <PageHeader>
-        <Heading as="h1" scale="xxl" color="secondary" mb="24px">
+        <Heading as="h1" scale="xxl" color="buttonTexetColor" mb="24px">
           {t('Farms')}
         </Heading>
-        <Heading scale="lg" color="text">
-          {t('Stake LP tokens to earn CRB')}
+        <Heading scale="lg" color="buttonTextColor">
+          {t('Stake LP tokens to earn $RYOSHI')}
         </Heading>
         {/* <NavLink exact activeClassName="active" to="/farms/auction" id="lottery-pot-banner">
           <Button p="0" variant="text">
@@ -444,7 +448,7 @@ const Farms: React.FC = () => {
         <div ref={observerRef} />
         {/* <StyledImage src="/images/decorations/3dpan.png" alt="Pancake illustration" width={120} height={103} /> */}
       </Page>
-    </>
+    </FarmContainer>
   )
 }
 

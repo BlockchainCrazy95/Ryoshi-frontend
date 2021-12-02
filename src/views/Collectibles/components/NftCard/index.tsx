@@ -33,7 +33,7 @@ const Header = styled(InfoRow)`
   min-height: 28px;
 `
 
-const DetailsButton = styled(Button).attrs({ variant: 'text' })`
+const DetailsButton = styled(Button).attrs({ variant: 'text'})`
   height: auto;
   padding: 16px 24px;
 
@@ -74,9 +74,9 @@ const NftCard: React.FC<NftCardProps> = ({ nft, canClaim = false, tokenIds = [],
   return (
     <Card isActive={walletOwnsNft}>
       <Preview nft={nft} isOwned={walletOwnsNft} />
-      <CardBody>
+      <CardBody style={{backgroundColor: "#f2ca66"}}>
         <Header>
-          <Heading>{name}</Heading>
+          <Heading color="buttonTextColor">{name}</Heading>
           {walletOwnsNft && (
             <Tag outline variant="secondary">
               {t('In Wallet')}
@@ -99,13 +99,13 @@ const NftCard: React.FC<NftCardProps> = ({ nft, canClaim = false, tokenIds = [],
           </Button>
         )}
       </CardBody>
-      <CardFooter p="0">
-        <DetailsButton width="100%" endIcon={<Icon width="24px" color="primary" />} onClick={handleClick}>
+      <CardFooter p="0" style={{backgroundColor: "#f2ca66"}}>
+        <DetailsButton width="100%" endIcon={<Icon width="24px" color="buttonTextColor" />} style={{color: "#000000"}} onClick={handleClick}>
           {t('Details')}
         </DetailsButton>
         {isOpen && (
           <InfoBlock>
-            <Text as="p" color="textSubtle" style={{ textAlign: 'center' }}>
+            <Text as="p" color="buttonTextColor" style={{ textAlign: 'center' }}>
               {t(description)}
             </Text>
           </InfoBlock>
